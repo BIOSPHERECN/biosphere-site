@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: var(--site-brand);
+  --color-brand-deep: var(--site-brand-deep);
+  --color-brand-soft: var(--site-brand-soft);
+  --color-ink: var(--site-ink);
+  --color-paper: var(--site-paper);
+  --color-accent: var(--site-accent);
+
+  --font-sans: var(--site-font-sans);
+  --font-display: var(--site-font-display);
+
+  --radius-site: 8px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
